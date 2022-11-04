@@ -15,6 +15,6 @@ public class Application {
 
 	@Bean
 	public Function<String, String> function() {
-		return value -> new StringBuilder(value).reverse().toString();
+		return Service::reverseString;
 	}
 }
