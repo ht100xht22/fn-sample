@@ -13,9 +13,8 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
-
 	@Bean
 	public Function<String, String> function() {
-		return value -> "TODO Create your function here";
+		return value -> new StringBuilder(value).reverse().toString();
 	}
 }
